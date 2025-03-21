@@ -1025,7 +1025,9 @@ foreign sokol_fetch_clib {
     // pause a request (will call response callback each frame with .paused)
     pause :: proc(h: Handle)  ---
     // continue a paused request
-    continue :: proc(h: Handle)  ---
+
+    @(link_name="sfetch_continue")
+    sfetch_continue :: proc(h: Handle)  ---
 }
 
 Log_Item :: enum i32 {

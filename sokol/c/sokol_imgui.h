@@ -529,7 +529,7 @@ inline void simgui_create_fonts_texture(const simgui_font_tex_desc_t& desc) { re
 #define SOKOL_IMGUI_IMPL_INCLUDED (1)
 
 #ifndef SOKOL_IMGUI_CPREFIX
-#define SOKOL_IMGUI_CPREFIX ig
+#define SOKOL_IMGUI_CPREFIX ImGui_
 #endif
 #define _SIMGUI_CONCAT2(prefix, name) prefix ## name
 #define _SIMGUI_CONCAT(prefix, name) _SIMGUI_CONCAT2(prefix, name)
